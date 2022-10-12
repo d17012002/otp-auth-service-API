@@ -1,0 +1,16 @@
+{
+    "TableName": "otp_table",
+    "KeySchema": [
+      { "AttributeName": "number", "KeyType": "HASH" }
+
+    ],
+    
+    "AttributeDefinitions": [
+      { "AttributeName": "number", "AttributeType": "S" }
+    ],
+
+    "ProvisionedThroughput": {
+      "ReadCapacityUnits": 5,
+      "WriteCapacityUnits": 5
+    }
+}
